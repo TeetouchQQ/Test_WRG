@@ -1,0 +1,48 @@
+{% extends 'use_navbar.html'%}
+{% block content%}
+
+<div class="row">
+    <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+        <div class='row'>
+            <div class="col text-center">
+                <h2 class="text-center">
+                    Pay with face ID
+                </h2>
+                </br>
+                </br>
+                    <img src="https://image.flaticon.com/icons/png/512/1629/1629121.png" class="img-fluid">
+                </h2>
+                </br>
+                </br>
+                <button type="button" onclick="location.href='http://127.0.0.1:8000/pay_face/'" class="btn btn-primary btn-lg btn-primary mt-3">
+                    <h2>Pay with Face ID</h2>
+                </button>
+            </div>
+            <div class="col text-center">
+                <h2 class="text-center">
+                    Pay with Qr code
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" class="img-fluid">
+                </h2>
+            </br>
+        </br>
+    </br>
+                <button type="button" onclick="location.href='http://127.0.0.1:8000/pay_qr/'" class="btn btn-primary btn-lg btn-primary mt-3">
+                    <h2>Pay with Qr code</h2>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="fixed-bottom">
+        <div class="row align-items-end">
+          <p class="text-right"></p>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-success mb-1 pb-4 pt-4">
+            <h2>Total : {{total}} Baht</h2>
+          </button>
+        </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
